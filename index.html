@@ -5,8 +5,414 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
     <!-- <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<!--     <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet"> -->
+<!--     <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    height: 60px;
+    /* background-color: #0F1111; */
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo
+{
+    height: 50px;
+    width: 113px;
+}
+
+.logo
+{
+    background-image: url("Photos/amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+.border
+{
+    border: 2px solid transparent;
+    /* padding: 10px 5px; */
+}
+
+.border:hover
+{
+    border: 2px solid white;
+}
+
+/*Box 2*/
+
+.add-first
+{
+    font-size: 0.80rem;
+    color: #CCCCCC;
+    margin-left: 15px;
+}
+
+.add-second
+{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-left: 3px;
+}
+
+.add-icon
+{
+    display: flex;
+    align-items: center;
+}
+
+/*Box 3*/
+
+.nav-search
+{
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid transparent;
+    /* background-color: pink; */
+    width: 730px;
+    height: 40px;
+    border-radius: 4px;
+    /* align-items: center; */
+}
+
+.border-search:hover{
+    border-radius: 7px;
+    border: 3px solid #FF9900;
+}
+
+
+
+.search-select
+{
+    background-color: #E6E6E6;
+    width: 50px;
+    text-align: center;
+    /* border-radius: 4px; */
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input
+{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-icon
+{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #FEBD68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: black;
+}
+/* 
+.search-icon:hover
+{
+    background-color: #F3A847;
+} */
+
+
+/*Country image div*/
+.country
+{
+    display: flex;
+    align-items: center;
+}
+
+#countryspan
+{
+    margin-left: 3px;
+}
+
+.conimg
+{
+    width: 21.6px;
+    height: 12.2px;
+    background-image: url("https://cdn.britannica.com/79/4479-050-6EF87027/flag-Stars-and-Stripes-May-1-1795.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/*Box 4*/
+
+.nav-first
+{
+    font-size: 0.7rem;
+}
+.nav-second
+{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.fa-cart-shopping
+{
+    font-size: 30px;
+}
+
+.cart-second
+{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* ..................................................... */
+/* Panel */
+
+
+.panel
+{
+    height: 39px;
+    background-color: #232F3E;
+    display: flex;
+    align-items: center; 
+    color: white;
+    justify-content: space-evenly;
+    /* padding-bottom: 0px; */
+    margin-bottom: 0px;
+}
+
+.panel-all
+{
+    margin-left: 20px;
+}
+
+.panel-ops p
+{
+    display: inline;
+    /* margin-left: 15px; */
+    margin-left: 4px;
+}
+
+.panel-ops
+{
+    width: 70%;
+    font-size: 0.85rem;
+    margin-left: 5px;
+}
+
+.panel-deals
+{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+
+.border-p
+{
+    border: 2px solid transparent;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px; */
+    padding: 10px 5px;
+}
+
+.border-p:hover
+{
+    border: 2px solid white;
+}
+
+/*.........................................................*/
+
+/* Hero Section  */
+
+.hero-section
+{
+    background-image: url("Photos/hero_image.jpg");
+    height: 380px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg
+{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.hero-msg a
+{
+    color: #007185;
+    text-decoration: none;
+}
+
+.shop-section
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #e2e7e6;
+}
+.box
+{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 10px 0px 15px;
+    /* margin: 5%; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.boximg
+{
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    /* transition: all 0.4s ease-in-out; */
+}
+
+.boximg:hover
+{
+    position: relative;
+    top: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+}
+
+.box-content
+{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p
+{
+    color: #007185;
+}
+
+/*Footer*/
+
+.foot-panel1
+{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2
+{
+    background-color: #232F3E;
+    color: white;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.foot_box
+{
+    height: 318.4px;
+    background-color: #232F3E;
+    color: white;
+    padding-top: 40px;
+}
+/* 
+.foot_box-1
+{
+
+} */
+
+ul a
+{
+    display: block;
+    padding: 5px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: #DDDDDD;
+}
+
+.footer-first
+{
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+}
+
+.foot-panel3
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #232F3E;
+    color: white;
+    border-top: 0.1px solid #3A4553;
+    height: 68px;   
+}
+
+.logo-footer
+{
+    height: 50px;
+    width: 100px;
+    background-image: url("Photos/amazon_logo.png");
+    background-size: cover;
+}
+
+.foot-panel4
+{
+    height: 70px;
+    background-color: #131A22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright
+{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #DDD;
+}
+        <style>
 </head>
 <body> 
     <header>
